@@ -26,10 +26,10 @@ Ps:Participantes, Responsabilidades e Estado
 ### Factores tendo em conta na realização da pesquisa
 
 - Funcionalidade 
-Complexidade
-Estabilidade
-Representação gráfica
-Implementação em C
+- Complexidade
+- Estabilidade
+- Representação gráfica
+- Implementação em C
 
 ### Utilizar os seguinte material para pesquisa:
 
