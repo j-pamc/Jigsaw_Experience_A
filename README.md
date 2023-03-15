@@ -2,7 +2,7 @@
 # ALGORIMOS DE ORDENAÇÃO INTERNA
 
 GRUPO A
-- ___________________________________________________________
+___________________________________________________________
 20210429 - Ivandro Neto       - Heap Sort      [incompleto]
 20210663 - Siomara dos Santos - Shell Sort     [incompleto]
 20210765 - Eugelice Yuye      - Selection Sort [incompleto]
@@ -19,7 +19,7 @@ Ps:Participantes, Responsabilidades e Estado
 - Após a realização de cada pesquisa apresentar um mapa de conceito e 
   questionario para auxiliar no processo de ensino. 
 
-  NÃO PARTILHAR OS AQUIVOS COM OS OUTROS GRUPOS, MAS PODEM PARTILHAR AS
+- NÃO PARTILHAR OS AQUIVOS COM OS OUTROS GRUPOS, MAS PODEM PARTILHAR AS
   INFORMAÇÕES. MEDIDA TOMADA PARA EVITAR PLAGIOS, LEMBRANDO QUE IREMOS
   FAZER UMA APRESENTAÇÃO ORAL COM POWERPOINT.
 
