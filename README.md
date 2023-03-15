@@ -20,7 +20,7 @@ Ps: Participantes, Responsabilidades e Estado
 
 - NÃO PARTILHAR OS AQUIVOS COM OS OUTROS GRUPOS, MAS PODEM PARTILHAR AS
   INFORMAÇÕES. MEDIDA TOMADA PARA EVITAR PLAGIOS, LEMBRANDO QUE IREMOS
-  FAZER UMA APRESENTAÇÃO ORAL COM POWERPOINT.
+  FAZER UMA APRESENTAÇÃO ORAL COM POWERPOINT. enviem somente os links e livros
 
 
 ### Factores tendo em conta na realização da pesquisa
