@@ -9,9 +9,9 @@ GRUPO A
 - 20211354 - Jéssica Correia    - Quick Sort     [incompleto]
 - 20211624 - Manuela Oliveira   - Merge Sort     [incompleto]
 
-Ps:Participantes, Responsabilidades e Estado
+Ps: Participantes, Responsabilidades e Estado
 
-### Obs: 
+### Obs 
 
 - Entrega 1 fase 22/03
 
