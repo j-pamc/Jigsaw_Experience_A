@@ -15,8 +15,8 @@
 
 ## Implementação em C
 
-1. [# Pimeiro exemplo](1#%20Implementação%20em%20c)
-2. [# Segundo exemplo](2#%20Implementação%20em%20C)
+1. [# Pimeiro exemplo](https://github.com/j-pamc/Jigsaw_Experience_A/blob/main/Quick%20Sort/1%23%20Implementação%20em%20c)
+2. [# Segundo exemplo](https://github.com/j-pamc/Jigsaw_Experience_A/blob/main/Quick%20Sort/2%23%20Implementação%20em%20C)
 
 ## Referencias 
 
