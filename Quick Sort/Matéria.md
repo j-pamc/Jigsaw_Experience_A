@@ -1,19 +1,23 @@
 
 # Quick Sort
 
-1. Utiliza o metodo dividar para conquistar
-2. Recursividade
-3. ordena de forma crescente
+Algoritmo de ordenação muito util e utilizado, por realizar a ordenação na estrutura pré existente.
 
-## Funcionalidade 
+### Funcionalidade 
 
-## Complexidade
+Trabalha com a tecnica Dividir e Conquistar (DAC), que está dividida em 3 fases:
 
-## Estabilidade
+1. Dividir: envolve dividir o problema em subproblemas menores.
+2. Conquer: Resolva subproblemas chamando recursivamente até serem resolvidos.
+3. Combine: Combine os subproblemas para obter a solução final de todo o problema.
 
-## Representação gráfica
+### Complexidade
 
-## Implementação em C
+### Estabilidade
+
+### Representação gráfica
+
+### Implementação em C
 
 1. [# Pimeiro exemplo](https://github.com/j-pamc/Jigsaw_Experience_A/blob/main/Quick%20Sort/1%23%20Implementação%20em%20c)
 2. [# Segundo exemplo](https://github.com/j-pamc/Jigsaw_Experience_A/blob/main/Quick%20Sort/2%23%20Implementação%20em%20C)
