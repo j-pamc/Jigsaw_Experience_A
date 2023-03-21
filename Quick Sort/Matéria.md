@@ -23,7 +23,7 @@ Trabalha com a tecnica Dividir e Conquistar (DAC), que está dividida em 3 fases
         n/b = tamanho de cada subproblema. Todos os subproblemas são assumidos como tendo o mesmo tamanho.
         f(n) = custo do trabalho realizado fora da chamada recursiva, que inclui o custo de dividir o problema e o custo de mesclar as soluções
 
-#### Vantagens
+###### Vantagens
 
 Vantagens do Algoritmo Dividir e Conquistar:
 
@@ -35,7 +35,7 @@ Vantagens do Algoritmo Dividir e Conquistar:
 6. Paralelismo: Normalmente algoritmos DAC são usados ​​em máquinas multiprocessadas com sistemas de memória compartilhada onde a comunicação de dados entre processadores não precisa ser planejada com antecedência, pois subproblemas distintos podem ser executados em diferentes processadores.
 7. Controle de arredondamento: Em cálculos com aritmética arredondada, por exemplo, com números de ponto flutuante, um algoritmo de divisão e conquista pode produzir resultados mais precisos do que um método iterativo superficialmente equivalente. Por exemplo, pode-se adicionar N números por um loop simples que adiciona cada dado a uma única variável ou por um algoritmo D e C que divide o conjunto de dados em duas metades, calcula recursivamente a soma de cada metade e, em seguida, adiciona o duas somas. Embora o segundo método execute o mesmo número de adições que o primeiro e pague a sobrecarga das chamadas recursivas, geralmente é mais preciso.
 
-#### Desvantagens 
+###### Desvantagens 
 
 1. Envolve recursão que às vezes é lenta e pode travar o sistema se for executada rigorosamente.
 2. A eficiência depende da implementação da lógica
