@@ -2,7 +2,7 @@
 # ALGORIMOS DE ORDENAÇÃO INTERNA
 
 GRUPO A
-- 20210429 - Ivandro Neto       - Heap Sort      [incompleto]
+- 20210429 - Ivandro Neto       - Heap Sort      [completo]
 - 20210663 - Siomara dos Santos - Shell Sort     [incompleto]
 - 20210765 - Eugelice Yuye      - Selection Sort [incompleto]
 - 20210571 - Anré Yanga         - Insention Sort [incompleto]
