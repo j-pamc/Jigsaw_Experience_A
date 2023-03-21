@@ -1,9 +1,10 @@
 
 # Quick Sort
 
-É um algoritmo de ordenação. O algoritmo escolhe um elemento pivô e reorganiza os elementos da matriz para que todos os elementos menores que o elemento pivô escolhido se movam para o lado esquerdo do pivô e todos os elementos maiores se movam para o lado direito. Finalmente, o algoritmo classifica recursivamente os subarrays à esquerda e à direita do elemento pivô.
+É um algoritmo de ordenação. O algoritmo escolhe um elemento pivô e reorganiza os elementos da matriz para que todos os elementos menores que o elemento pivô escolhido se movam para o lado esquerdo do pivô e todos os elementos maiores se movam para o lado direito. Finalmente, o algoritmo classifica recursivamente os subarrays à esquerda e à direita do elemento pivô. Ele também apresenta a vantagem da ordenaçáo local e funciona bem até mesmo em ambientes de memória virtual.
 
-### Funcionalidade 
+## Funcionalidade 
+
 
 #### DAC - Algoritmo Dividir e Conquistar
 
@@ -44,31 +45,42 @@ Vantagens do Algoritmo Dividir e Conquistar:
 6. Limitações de memória: Ao trabalhar com grandes conjuntos de dados, os requisitos de memória para armazenar os resultados intermediários dos subproblemas podem se tornar um fator limitante.
 7. Dificuldade de paralelização: Em alguns casos, dividir o problema em subproblemas e resolvê-los de forma independente pode não ser facilmente paralelizável, levando ao uso ineficiente dos recursos computacionais.
 
-### Complexidade
+## Complexidade
+
+
+O tempo gasto pelo QuickSort, em geral, pode ser escrito da seguinte maneira. 
+
+ T(n) = T(k) + T(nk-1) + (theta)(n)
+
+Os primeiros dois termos são para duas chamadas recursivas, o último termo é para o processo de partição. k é o número de elementos menores que o pivô.
+
 
 - Pior caso 
-    O pior caso ocorre quando o processo de partição sempre escolhe o maior ou o menor elemento como pivô. Se considerarmos a estratégia de partição acima, onde o último elemento é sempre escolhido como um pivô, o pior caso ocorreria quando o array já estivesse classificado em ordem crescente ou decrescente. A seguir está a recorrência para o pior caso.  
+    O comportamento do pior caso para o quicksort ocorre quando a rotina de particionamento produz um subproblema com n - 1 elementos e um com O elementos, ou seja, quando o processo de partição sempre escolhe o maior ou o menor elemento como pivô. Se considerarmos a estratégia de partição acima, onde o último elemento é sempre escolhido como um pivô, o pior caso ocorreria quando o array já estivesse classificado em ordem crescente ou decrescente. A seguir está a recorrência para o pior caso.  
 
-A solução para a recorrência acima é 
+    T(n) = T(n-1) + T(0) + (theta)(n)
+    Solução (theta)(n^2)
 
 - Melhor caso:
-    O melhor caso ocorre quando o processo de partição sempre escolhe o elemento do meio como pivô. O seguinte é a recorrência para o melhor caso. 
+    Na divisão mais uniforme possível, o processo de partição produz dois subproblemas, cada um de tamanho não maior que n/2, pois um tem tamanho n/2 e o outro tem tamanho (2/1) - 1. Ou melhor, quando o processo de partição sempre escolhe o elemento do meio como pivô. O seguinte é a recorrência para o melhor caso. 
 
- T(n) = 2T(n/2) +  \theta 
+    T(n) = 2T(n/2) + (theta)(n)
+    Solução (theta)(nLogn)
 
 
 - Caso médio: 
-    Para fazer a análise do caso médio, precisamos considerar todas as permutações possíveis da matriz e calcular o tempo gasto por cada permutação, o que não parece fácil .   
+    Para fazer a análise do caso médio, precisamos considerar todas as permutações possíveis da matriz e calcular o tempo gasto por cada permutação. Por exemplo, suponha que o algoritmo de particionamento sempre produza uma divisão proporcional de 9 para, obtemos a recorrência:
 
-A solução da recorrência acima também é O(nLogn):
+    T(n) = T(n/10) + T(9n/10) + (theta)(n)
+    Solução (theta)(nLogn)
 
-### Estabilidade
+## Estabilidade
 
 A implementação padrão não é estável. No entanto, qualquer algoritmo de ordenação pode se tornar estável considerando índices como parâmetro de comparação.
 
-### Representação gráfica
+## Representação gráfica
 
-### Implementação em C
+## Implementação em C
 
 1. [# Pimeiro exemplo](1#1#%20Implementação%20em%20c)
 2. [# Segundo exemplo](2#2#%20Implementação%20em%20C)
