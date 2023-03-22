@@ -4,9 +4,9 @@
 GRUPO A
 - 20210429 - Ivandro Neto       - Heap Sort      [completo]
 - 20210663 - Siomara dos Santos - Shell Sort     [incompleto]
-- 20210765 - Eugelice Yuye      - Selection Sort [incompleto]
+- 20210765 - Eugelice Yuye      - Selection Sort [Completo]
 - 20210571 - Anré Yanga         - Insention Sort [incompleto]
-- 20211354 - Jéssica Correia    - Quick Sort     [incompleto]
+- 20211354 - Jéssica Correia    - Quick Sort     [Completo]
 - 20211624 - Manuela Oliveira   - Merge Sort     [incompleto]
 
 Ps: Participantes, Responsabilidades e Estado
