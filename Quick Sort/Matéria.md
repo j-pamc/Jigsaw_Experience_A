@@ -1,54 +1,27 @@
 
 # Quick Sort
 
-É um algoritmo de ordenação. O algoritmo escolhe um elemento pivô e reorganiza os elementos da matriz para que todos os elementos menores que o elemento pivô escolhido se movam para o lado esquerdo do pivô e todos os elementos maiores se movam para o lado direito. Finalmente, o algoritmo classifica recursivamente os subarrays à esquerda e à direita do elemento pivô. Ele também apresenta a vantagem da ordenaçáo local e funciona bem até mesmo em ambientes de memória virtual.
-
 ## Funcionalidade 
 
-1. Select the Pivot Element
+É um algoritmo de ordenação. O algoritmo escolhe um elemento pivô e reorganiza os elementos da matriz para que todos os elementos menores que o elemento pivô escolhido se movam para o lado esquerdo do pivô e todos os elementos maiores se movam para o lado direito. Finalmente, o algoritmo classifica recursivamente os subarrays à esquerda e à direita do elemento pivô. Ele também apresenta a vantagem da ordenaçáo local e funciona bem até mesmo em ambientes de memória virtual.
 
-There are different variations of quicksort where the pivot element is selected from different positions. Here, we will be selecting the rightmost element of the array as the pivot element.
+O algoritmo é dividido geralmente em 3 funções:
 
-Quick Sort Steps
-Select a pivot element
-2. Rearrange the Array
-
-Now the elements of the array are rearranged so that elements that are smaller than the pivot are put on the left and the elements greater than the pivot are put on the right.
-
-Quick Sort Steps
-Put all the smaller elements on the left and greater on the right of pivot element
-Here's how we rearrange the array:
-
-A pointer is fixed at the pivot element. The pivot element is compared with the elements beginning from the first index.
-Quick Sort Steps
-Comparison of pivot element with element beginning from the first index
-If the element is greater than the pivot element, a second pointer is set for that element.
-Quick Sort Steps
-If the element is greater than the pivot element, a second pointer is set for that element.
-Now, pivot is compared with other elements. If an element smaller than the pivot element is reached, the smaller element is swapped with the greater element found earlier.
-Quick Sort Steps
-Pivot is compared with other elements.
-Again, the process is repeated to set the next greater element as the second pointer. And, swap it with another smaller element.
-
-Quick Sort Steps
-The process is repeated to set the next greater element as the second pointer.
-The process goes on until the second last element is reached.
-Quick Sort Steps
-The process goes on until the second last element is reached.
-Finally, the pivot element is swapped with the second pointer.
-Quick Sort Steps
-Finally, the pivot element is swapped with the second pointer.
-3. Divide Subarrays
-
-Pivot elements are again chosen for the left and the right sub-parts separately. And, step 2 is repeated.
-
-Quick Sort Steps
-Select pivot element of in each half and put at correct place using recursion
+    1- Particionar - escolhe um número qualquer presente no array, chamado de pivot, e é posto em uma posição em que todos os elementos à esquerda são menores ou iguais e todos os elementos à direita são maiores;
  
+    2- Swap - troca de posições dentro do vetor/sequência os elementos;
 
-The subarrays are divided until each subarray is formed of a single element. At this point, the array is already sorted.
+    3- QuickSort - Utilizando o paradigma de Dividir para conquistar, particiona o vector  recursivamente até que todas as subsequencias estejam ordenadas.
 
+E executado da seguinte forma:
 
+1. O algoritmo receber um array preenchido.
+2. Escolhe um pivô. Geralmente é selecionado o primeiro elemento, mas pode ser aleatório.
+3. Duas contantes j e i, são posicionadas nos extremos do array. 
+4. A variável j começa a percorrer da esquerda a direita comparando os valores aos do pivô. Se o valor for maior que o pivô a constante para, e a variável i começa  a percorrer da direita a esquerda. Se o valor for menor que o pivô a constante para e é feita uma troca com a posição em que a variável j parou.
+5. As duas variaveis andam uma casa, e o processo repete-se até o momento que elas encontraram-se durante o percurso. Quando isso acontece o array é dividido, e é feita uma chamada recursiva para cada nova repartição.
+6. O processo repete-se até o momento em que só houver um único elemento nas repartições geradas
+7. Todos os valores são unidos novamente.
 
 
 #### DAC - Algoritmo Dividir e Conquistar
@@ -77,7 +50,7 @@ Os primeiros dois termos são para duas chamadas recursivas, o último termo é 
     Solução (theta)(n^2)
 
 - Melhor caso:
-    Na divisão mais uniforme possível, o processo de partição produz dois subproblemas, cada um de tamanho não maior que n/2, pois um tem tamanho n/2 e o outro tem tamanho (2/1) - 1. Ou melhor, quando o processo de partição sempre escolhe o elemento do meio como pivô. O seguinte é a recorrência para o melhor caso. 
+    Quando o processo de partição sempre escolhe o elemento do meio como pivô.
 
     T(n) = 2T(n/2) + (theta)(n)
     Solução (theta)(nLogn)
@@ -108,3 +81,4 @@ A implementação padrão não é estável. No entanto, qualquer algoritmo de or
 3. https://www.geeksforgeeks.org/introduction-to-divide-and-conquer-algorithm-data-structure-and-algorithm-tutorials/
 4. https://gist.github.com/marcoscastro/1dd65900cc7b188e1ab9
 5. https://www.programiz.com/dsa/quick-sort
+6. https://joaoarthurbm.github.io/eda/posts/quick-sort/
