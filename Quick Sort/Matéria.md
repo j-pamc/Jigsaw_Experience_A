@@ -24,9 +24,9 @@ E executado da seguinte forma:
 7. Todos os valores são unidos novamente.
 
 
-#### DAC - Algoritmo Dividir e Conquistar
+#### Nota - Algoritmo Dividir e Conquistar
 
-Trabalha com a tecnica Dividir e Conquistar (DAC), que está dividida em 3 fases:
+A tecnica Dividir para Conquistar (DAC), que está dividida em 3 fases:
 
 1. Dividir: envolve dividir o problema em subproblemas menores.
 2. Conquer: Resolva subproblemas chamando recursivamente até serem resolvidos.
@@ -44,7 +44,7 @@ Os primeiros dois termos são para duas chamadas recursivas, o último termo é 
 
 
 - Pior caso 
-    O comportamento do pior caso para o quicksort ocorre quando a rotina de particionamento produz um subproblema com n - 1 elementos e um com O elementos, ou seja, quando o processo de partição sempre escolhe o maior ou o menor elemento como pivô. Se considerarmos a estratégia de partição acima, onde o último elemento é sempre escolhido como um pivô, o pior caso ocorreria quando o array já estivesse classificado em ordem crescente ou decrescente. A seguir está a recorrência para o pior caso.  
+    Quando o processo de partição sempre escolhe o maior ou o menor elemento como pivô. Se considerarmos a estratégia de partição acima, onde o último elemento é sempre escolhido como um pivô. O pior caso ocorreria quando o array já estivesse classificado em ordem crescente ou decrescente. 
 
     T(n) = T(n-1) + T(0) + (theta)(n)
     Solução (theta)(n^2)
