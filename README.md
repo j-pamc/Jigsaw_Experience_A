@@ -13,12 +13,12 @@ Ps: Participantes, Responsabilidades e Estado
 
 ### Obs 
 
-- Entrega 1 fase 22/03
+  - ENTREGA 02\04\2023
 
-- Após a realização de cada pesquisa apresentar a pesquisa, um mapa de conceito e 
+  - Após a realização de cada pesquisa apresentar a pesquisa, um mapa de conceito e 
   um questionario para auxiliar no processo de ensino e estudo. 
 
-- NÃO PARTILHAR OS AQUIVOS COM OS OUTROS GRUPOS, MAS PODEM PARTILHAR AS
+  - NÃO PARTILHAR OS AQUIVOS COM OS OUTROS GRUPOS, MAS PODEM PARTILHAR AS
   INFORMAÇÕES. MEDIDA TOMADA PARA EVITAR PLAGIOS, LEMBRANDO QUE IREMOS
   FAZER UMA APRESENTAÇÃO ORAL COM POWERPOINT. enviem somente os links e livros
 
@@ -30,6 +30,7 @@ Ps: Participantes, Responsabilidades e Estado
 - Estabilidade
 - Representação gráfica
 - Implementação em C
+- Referencias Bibliograficas (Norma APA)
 
 ### Utilizar os seguinte material para pesquisa:
 
