@@ -1,9 +1,9 @@
 
 # Quick Sort
 
-## Funcionalidade 
-
 É um algoritmo de ordenação. O algoritmo escolhe um elemento pivô e reorganiza os elementos da matriz para que todos os elementos menores que o elemento pivô escolhido se movam para o lado esquerdo do pivô e todos os elementos maiores se movam para o lado direito. Finalmente, o algoritmo classifica recursivamente os subarrays à esquerda e à direita do elemento pivô. Ele também apresenta a vantagem da ordenaçáo local e funciona bem até mesmo em ambientes de memória virtual.
+
+## Funcionalidade 
 
 O algoritmo é dividido geralmente em 3 funções:
 
@@ -15,14 +15,10 @@ O algoritmo é dividido geralmente em 3 funções:
 
 E executado da seguinte forma:
 
-1. O algoritmo receber um array preenchido.
-2. Escolhe um pivô. Geralmente é selecionado o primeiro elemento, mas pode ser aleatório.
-3. Duas contantes j e i, são posicionadas nos extremos do array. 
-4. A variável j começa a percorrer da esquerda a direita comparando os valores aos do pivô. Se o valor for maior que o pivô a constante para, e a variável i começa  a percorrer da direita a esquerda. Se o valor for menor que o pivô a constante para e é feita uma troca com a posição em que a variável j parou.
-5. As duas variaveis andam uma casa, e o processo repete-se até o momento que elas encontraram-se durante o percurso. Quando isso acontece o array é dividido, e é feita uma chamada recursiva para cada nova repartição.
-6. O processo repete-se até o momento em que só houver um único elemento nas repartições geradas
-7. Todos os valores são unidos novamente.
-
+   1. O algoritmo receber um array preenchido, e escolhe um pivô, que pode ser selecionado aleatoriamente.
+   2. Duas variáveis j e i, são posicionadas nos extremos do array. A variável j começa a percorrer da esquerda a direita comparando os valores aos do pivô. Se o valor de j for maior a constante para, e a variável i começa a percorrer da direita a esquerda. Se o valor de i for menor que o pivô, a constante para e é feita uma troca com a posição em que a variável j parou.
+   3. As duas variáveis andam uma casa, e o processo repete-se até o momento em que elas encontraram-se durante o percurso. Quando isso acontece o array é dividido, e é feita uma chamada recursiva para cada nova repartição.
+   4. O processo repete-se até o momento em que só houver um único elemento em cada repartição gerada. E por fim todos os valores são unidos novamente.
 
 #### Nota - Algoritmo Dividir e Conquistar
 
@@ -36,7 +32,7 @@ A tecnica Dividir para Conquistar (DAC), que está dividida em 3 fases:
 ## Complexidade
 
 
-O tempo gasto pelo QuickSort, em geral, pode ser escrito da seguinte maneira. 
+O tempo gasto pelo QuickSort, em geral, pode ser escrito da seguinte maneira:
 
  T(n) = T(k) + T(nk-1) + (theta)(n)
 
@@ -44,7 +40,7 @@ Os primeiros dois termos são para duas chamadas recursivas, o último termo é 
 
 
 - Pior caso 
-    Quando o processo de partição sempre escolhe o maior ou o menor elemento como pivô. Se considerarmos a estratégia de partição acima, onde o último elemento é sempre escolhido como um pivô. O pior caso ocorreria quando o array já estivesse classificado em ordem crescente ou decrescente. 
+    Quando o processo de partição sempre escolhe o maior ou o menor elemento como pivô, ou quando o array já estivesse classificado em ordem crescente ou decrescente. 
 
     T(n) = T(n-1) + T(0) + (theta)(n)
     Solução (theta)(n^2)
@@ -57,7 +53,7 @@ Os primeiros dois termos são para duas chamadas recursivas, o último termo é 
 
 
 - Caso médio: 
-    Para fazer a análise do caso médio, precisamos considerar todas as permutações possíveis da matriz e calcular o tempo gasto por cada permutação. Por exemplo, suponha que o algoritmo de particionamento sempre produza uma divisão proporcional de 9 para, obtemos a recorrência:
+    Exemplo - suponha que o algoritmo de particionamento sempre produza uma divisão proporcional de 9 para, obtemos a recorrência:
 
     T(n) = T(n/10) + T(9n/10) + (theta)(n)
     Solução (theta)(nLogn)
@@ -70,9 +66,7 @@ A implementação padrão não é estável. No entanto, qualquer algoritmo de or
 
 ## Implementação em C
 
-1. [# Pimeiro exemplo](1#1#%20Implementação%20em%20c)
-2. [# Segundo exemplo](2#2#%20Implementação%20em%20C)
-3. [# Terceiro exemplo](3#3#%20Implementação%20em%20c)
+.
 
 ## Referencias 
 
