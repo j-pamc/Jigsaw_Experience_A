@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "BiTree.c"
 
-
 void printArray(int arr[], int size)
 {
     for (int i = 0; i < size; i++)
@@ -26,15 +25,13 @@ void min_heapify(int arr[], int size, int current)
     // Encontra o menor elemento entre o nó atual e seus filhos esquerdo e direito
     if (left < size && arr[left] < arr[smallest])
         smallest = left;
-
+    
     if (right < size && arr[right] < arr[smallest])
         smallest = right;
-
     // Se o nó atual não for o menor, troca ele com o menor e chama heapify recursivamente para o subárvore afetada
     if (smallest != current)
     {
         swap(&arr[current], &arr[smallest]);
-
         min_heapify(arr, size, smallest);
     }
 }
@@ -61,7 +58,6 @@ void heapify(int arr[], int size, int current)
         swap(&arr[largest], &arr[current]);
         // Depois pega o maior como o selecionado da próxima verificação
         printArray(arr, size);
-
         heapify(arr, size, largest);
     }
 }
@@ -81,21 +77,17 @@ void HeapSort(int arr[], int size)
 {
     // Gera um max heap apartir do array dado.
     MaxHeap(arr, size);
-    /*
-        Para min heap comenta a linha à cima e descomenta a linha abaixo
-    */
+    /* Para min heap comenta a linha à cima e descomenta a linha abaixo */
     // MinHeap(arr, size);
-
     // Heap Sort
+    
     for (int i = size - 1; i >= 0; i--)
     {
         // Troca a posição do primeiro elemento com o último do array
         swap(&arr[0], &arr[i]);
         // Elimina o último elemento e volta a reorganiza-los até sobrar um único elemento
         heapify(arr, i, 0);
-        /*
-            Para min heap comenta a linha à cima e descomenta a linha abaixo
-        */
+        /*  Para min heap comenta a linha à cima e descomenta a linha abaixo    */
         // min_heapify(arr, i, 0);
     }
 }
