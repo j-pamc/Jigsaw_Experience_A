@@ -1,6 +1,6 @@
+#include "BiTree.c"
 #include <stdio.h>
 #include <stdlib.h>
-#include "BiTree.c"
 
 void printArray(int arr[], int size)
 {
@@ -21,11 +21,9 @@ void min_heapify(int arr[], int size, int current)
     int smallest = current;
     int left = 2 * current + 1;
     int right = 2 * current + 2;
-
     // Encontra o menor elemento entre o nó atual e seus filhos esquerdo e direito
     if (left < size && arr[left] < arr[smallest])
-        smallest = left;
-    
+        smallest = left; 
     if (right < size && arr[right] < arr[smallest])
         smallest = right;
     // Se o nó atual não for o menor, troca ele com o menor e chama heapify recursivamente para o subárvore afetada
