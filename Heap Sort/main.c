@@ -78,7 +78,6 @@ void HeapSort(int arr[], int size)
     /* Para min heap comenta a linha à cima e descomenta a linha abaixo */
     // MinHeap(arr, size);
     // Heap Sort
-    
     for (int i = size - 1; i >= 0; i--)
     {
         // Troca a posição do primeiro elemento com o último do array
